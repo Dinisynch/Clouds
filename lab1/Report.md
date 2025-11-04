@@ -73,8 +73,8 @@
 ```nginx
   http {
     ...
-    ssl_certificate /home/dinis/projects/study/Clouds/ssl/localhost.crt;
-    ssl_certificate_key /home/dinis/projects/study/Clouds/ssl/localhost.key;
+    ssl_certificate /home/dinis/projects/study/Clouds/lab1/ssl/localhost.crt;
+    ssl_certificate_key /home/dinis/projects/study/Clouds/lab1/ssl/localhost.key;
   }
 ```
 
@@ -109,7 +109,7 @@
       server_name app1.local;
 
       location / {
-        root /home/dinis/projects/study/Clouds/apps/;
+        root /home/dinis/projects/study/Clouds/lab1/apps/;
         index app1.html;
       }
     }
@@ -122,7 +122,7 @@
       server_name app2.local;
 
       location / {
-        root /home/dinis/projects/study/Clouds/apps/;
+        root /home/dinis/projects/study/Clouds/lab1/apps/;
         index app1.html;
       }
     }
@@ -366,7 +366,7 @@ curl -k https://app2.local
 ```nginx
   ...
   location /something/ {
-        alias /home/dinis/projects/study/Clouds/incomprehensibleHTML/;
+        alias /home/dinis/projects/study/Clouds/lab1/incomprehensibleHTML/;
   }
   ...
 ```
